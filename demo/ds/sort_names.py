@@ -7,7 +7,11 @@ while True:
     if name.lower() == 'end':
         break
 
-    if name not in names:
+    # check whether name is already present in names
+    for n in names:
+        if n.lower() == name.lower():
+            break
+    else: # name is not found
         names.append(name)
 
 names.sort()
