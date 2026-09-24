@@ -5,3 +5,5 @@ def wish(user, message):
 wish('Larry', 'Hi') # call function
 wish('Scott', 'Hello')
 
+#wish(10,20)
+
