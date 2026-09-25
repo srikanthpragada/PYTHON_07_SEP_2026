@@ -1,9 +1,7 @@
-
 def wish(user, message):
     print(message, user)
 
-wish('Larry', 'Hi') # call function
-wish('Scott', 'Hello')
 
-#wish(10,20)
+wish('Larry', 'Hi')  # call function
+wish(message="Hello", user='Scott')
 
