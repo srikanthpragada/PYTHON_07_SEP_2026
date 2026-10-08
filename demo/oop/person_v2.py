@@ -14,11 +14,7 @@ class Person:
 
 
 p1 = Person("Rossum", 50)
-p2 = Person("Rossum", 50)
 
-print(p1 == p2)  # p1.__eq__(p2)
-p3 = Person("Gosling", 55)
-print(p3 > p2)  # p3.__gt__(p2)
-
-print(p1)  # p1.__str__()
-print(p1.__str__())
+print(Person.__module__)
+print(Person.__bases__)
+print(p1.__dict__)   # __dict__ is built-in object attribute

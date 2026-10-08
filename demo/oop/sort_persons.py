@@ -13,12 +13,9 @@ class Person:
         return self.age > other.age
 
 
-p1 = Person("Rossum", 50)
-p2 = Person("Rossum", 50)
+persons = [Person("Rossum", 50),
+           Person("Joe", 20),
+           Person("Gosling", 55)]
 
-print(p1 == p2)  # p1.__eq__(p2)
-p3 = Person("Gosling", 55)
-print(p3 > p2)  # p3.__gt__(p2)
-
-print(p1)  # p1.__str__()
-print(p1.__str__())
+for p in sorted(persons):
+    print(p)
