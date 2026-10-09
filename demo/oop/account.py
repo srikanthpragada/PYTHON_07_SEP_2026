@@ -14,7 +14,8 @@ class SavingsAccount:
         else:
             print('Sorry! Insufficient Balance!')
 
-    def getbalance(self):
+    @property
+    def current_balance(self):
         return self.balance
 
     @staticmethod
@@ -27,5 +28,5 @@ print(SavingsAccount.getminbal())
 s = SavingsAccount(1, "Scott", 50000)
 s.deposit(10000)
 s.withdraw(20000)
-print(s.getbalance())
+print(s.current_balance)
 
