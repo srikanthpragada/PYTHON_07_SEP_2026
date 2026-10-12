@@ -6,9 +6,13 @@ class Stack:
         self.data.append(value)
 
     def pop(self):
+        if self.isempty():
+            raise ValueError('Stack is empty!')
         return self.data.pop()
 
     def peek(self):
+        if self.isempty():
+            raise ValueError('Stack is empty!')
         return self.data[-1]
 
     @property
