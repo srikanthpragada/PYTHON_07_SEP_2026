@@ -25,5 +25,5 @@ print(json.dumps(employees)) # list of dict to array of json objects
 
 # Write to file
 f = open("employees.json", "wt")
-json.dump(employees, f)
+json.dump(employees, f)  # write list of dict to file
 f.close()
